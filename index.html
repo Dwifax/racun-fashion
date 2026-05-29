@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagonya Fashion - Rekomendasi Outfit & Jaket Terbaik</title>
-    <meta name="description" content="Temukan rekomendasi outfit, jaket, dan fashion terlaris di Shopee. Diskon s/d 80%, gratis ongkir!">
-    <meta property="og:title" content="Jagonya Fashion - Rekomendasi Outfit & Jaket Terbaik">
-    <meta property="og:description" content="Temukan outfit dan jaket pilihan terbaik dengan diskon s/d 80%">
-    <meta property="og:type" content="website">
+    <title>Jaket Hoodie Premium - Jagonya Fashion</title>
+    <meta name="description" content="Jaket Hoodie Premium Unisex - Nyaman, stylish, harga terjangkau. Diskon 30%!">
+    <meta property="og:title" content="Jaket Hoodie Premium - Jagonya Fashion">
+    <meta property="og:description" content="Jaket Hoodie Premium Unisex - Nyaman, stylish, harga terjangkau. Diskon 30%!">
+    <meta property="og:type" content="product">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
         body { font-family: 'Roboto', sans-serif; }
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
         .flash-pulse { animation: pulse 1.5s infinite; }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-        .product-card:hover { transform: translateY(-2px); }
-        .product-card { transition: all 0.2s; }
     </style>
     <script>
         tailwind.config = {
@@ -35,409 +31,129 @@
 <body class="min-h-screen bg-gray-100">
     <!-- Header -->
     <header class="bg-shopee-orange sticky top-0 z-50 shadow-md">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center gap-4 h-14">
-                <a href="/" class="flex-shrink-0">
-                    <h1 class="text-white font-black text-lg tracking-wider">JAGONYA FASHION 👕</h1>
-                </a>
-                <div class="flex-1 max-w-2xl">
-                    <div class="relative flex">
-                        <input type="text" placeholder="Cari jaket, outfit, fashion favoritmu..." class="w-full px-4 py-2 rounded-l-sm text-sm focus:outline-none bg-white">
-                        <button class="bg-shopee-darkOrange hover:bg-red-600 px-5 rounded-r-sm text-white font-medium text-sm">🔍</button>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4 text-white">
-                    <span class="hidden md:flex flex-col items-center cursor-pointer">
-                        <span class="text-lg">🛒</span>
-                        <span class="text-[9px]">Keranjang</span>
-                    </span>
-                </div>
+        <div class="max-w-lg mx-auto px-4">
+            <div class="flex items-center justify-center h-12">
+                <h1 class="text-white font-black text-base tracking-wider">JAGONYA FASHION 🔥</h1>
             </div>
         </div>
     </header>
 
-    <!-- Banner -->
-    <div class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500">
-        <div class="max-w-7xl mx-auto px-4 py-6">
-            <div class="text-center">
-                <h1 class="text-2xl md:text-3xl font-black text-white tracking-wider mb-1" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3)">
-                    JAGONYA FASHION, JAGONYA OOTD! 🔥
-                </h1>
-                <p class="text-xs text-white/80">Diskon s/d 80% • Gratis Ongkir • COD Tersedia</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Categories -->
-    <section class="bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex overflow-x-auto gap-6 py-4 scrollbar-hide">
-                <a href="#" class="flex flex-col items-center gap-2 min-w-[60px]">
-                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-2xl hover:bg-orange-100 transition-colors border border-orange-100 cursor-pointer">👕</div>
-                    <span class="text-[11px] text-gray-600 text-center">Kaos</span>
-                </a>
-                <a href="#" class="flex flex-col items-center gap-2 min-w-[60px]">
-                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-2xl hover:bg-orange-100 transition-colors border border-orange-100 cursor-pointer">🧥</div>
-                    <span class="text-[11px] text-gray-600 text-center">Jaket</span>
-                </a>
-                <a href="#" class="flex flex-col items-center gap-2 min-w-[60px]">
-                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-2xl hover:bg-orange-100 transition-colors border border-orange-100 cursor-pointer">👖</div>
-                    <span class="text-[11px] text-gray-600 text-center">Celana</span>
-                </a>
-                <a href="#" class="flex flex-col items-center gap-2 min-w-[60px]">
-                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-2xl hover:bg-orange-100 transition-colors border border-orange-100 cursor-pointer">👗</div>
-                    <span class="text-[11px] text-gray-600 text-center">Dress</span>
-                </a>
-                <a href="#" class="flex flex-col items-center gap-2 min-w-[60px]">
-                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-2xl hover:bg-orange-100 transition-colors border border-orange-100 cursor-pointer">👟</div>
-                    <span class="text-[11px] text-gray-600 text-center">Sepatu</span>
-                </a>
-                <a href="#" class="flex flex-col items-center gap-2 min-w-[60px]">
-                    <div class="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-2xl hover:bg-orange-100 transition-colors border border-orange-100 cursor-pointer">👜</div>
-                    <span class="text-[11px] text-gray-600 text-center">Tas</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Flash Sale -->
-    <section class="bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between py-3 border-b border-gray-100">
-                <div class="flex items-center gap-3">
-                    <span class="text-lg font-bold text-shopee-orange flex items-center gap-1">
-                        <span class="flash-pulse">⚡</span> FLASH SALE
-                    </span>
-                    <span class="text-xs text-gray-400">Berakhir dalam:</span>
-                    <div class="flex items-center gap-0.5">
-                        <span class="bg-red-500 text-white px-1.5 py-0.5 rounded text-xs font-bold" id="hours">02</span>
-                        <span class="text-red-500 font-bold">:</span>
-                        <span class="bg-red-500 text-white px-1.5 py-0.5 rounded text-xs font-bold" id="minutes">45</span>
-                        <span class="text-red-500 font-bold">:</span>
-                        <span class="bg-red-500 text-white px-1.5 py-0.5 rounded text-xs font-bold" id="seconds">30</span>
-                    </div>
-                </div>
-                <span class="text-shopee-orange text-xs cursor-pointer hover:underline">Lihat Semua →</span>
-            </div>
-            <div class="flex overflow-x-auto gap-3 py-3 scrollbar-hide">
-                <!-- Product 1 - Main Affiliate Link -->
-                <div class="flex-shrink-0 w-32">
-                    <a href="https://s.shopee.co.id/7KuC7FWzoH" target="_blank" rel="noopener noreferrer" class="product-card bg-white rounded-sm overflow-hidden block border border-gray-100 shadow-sm hover:shadow-lg transition-all">
-                        <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                            <div class="w-full h-full bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center text-4xl">🧥</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">30% OFF</span>
-                            <span class="absolute top-0 right-0 bg-red-500 text-white text-[10px] px-1.5 py-0.5 font-bold flash-pulse">⚡</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Jaket Hoodie Premium Unisex</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp150.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp215.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★★</span>
-                                    <span class="text-gray-400 ml-0.5">4.9</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 5.2rb</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Placeholder Products -->
-                <div class="flex-shrink-0 w-32">
-                    <div class="product-card bg-white rounded-sm overflow-hidden block border border-gray-100 shadow-sm hover:shadow-lg transition-all">
-                        <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                            <div class="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-4xl">👕</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">25% OFF</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Kaos Oversize Premium Cotton</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp89.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp119.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★☆</span>
-                                    <span class="text-gray-400 ml-0.5">4.7</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 3.8rb</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-shrink-0 w-32">
-                    <div class="product-card bg-white rounded-sm overflow-hidden block border border-gray-100 shadow-sm hover:shadow-lg transition-all">
-                        <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                            <div class="w-full h-full bg-gradient-to-br from-green-100 to-teal-100 flex items-center justify-center text-4xl">👖</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">35% OFF</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Celana Cargo Tactical Premium</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp125.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp192.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★★</span>
-                                    <span class="text-gray-400 ml-0.5">4.8</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 6.1rb</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-shrink-0 w-32">
-                    <div class="product-card bg-white rounded-sm overflow-hidden block border border-gray-100 shadow-sm hover:shadow-lg transition-all">
-                        <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                            <div class="w-full h-full bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center text-4xl">👗</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">40% OFF</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Dress Casual Korean Style</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp175.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp292.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★☆</span>
-                                    <span class="text-gray-400 ml-0.5">4.6</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 2.9rb</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-4 py-4">
-        <div class="flex gap-4">
-            <!-- Sidebar -->
-            <aside class="hidden lg:block w-52 flex-shrink-0">
-                <div class="bg-white rounded-sm shadow-sm sticky top-20 overflow-hidden">
-                    <div class="bg-shopee-orange text-white px-4 py-2.5 font-bold text-sm">📂 Kategori</div>
-                    <nav class="py-2">
-                        <button class="w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 bg-orange-50 text-shopee-orange font-medium border-l-2 border-shopee-orange">
-                            <span>🏷️</span><span>Semua</span>
-                        </button>
-                        <button class="w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 text-gray-600 hover:bg-gray-50">
-                            <span>🧥</span><span>Jaket</span>
-                        </button>
-                        <button class="w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 text-gray-600 hover:bg-gray-50">
-                            <span>👕</span><span>Kaos</span>
-                        </button>
-                        <button class="w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 text-gray-600 hover:bg-gray-50">
-                            <span>👖</span><span>Celana</span>
-                        </button>
-                        <button class="w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 text-gray-600 hover:bg-gray-50">
-                            <span>👗</span><span>Dress</span>
-                        </button>
-                        <button class="w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 text-gray-600 hover:bg-gray-50">
-                            <span>👟</span><span>Sepatu</span>
-                        </button>
-                    </nav>
-                    <div class="mx-3 mb-3 bg-gradient-to-br from-orange-50 to-red-50 rounded-sm p-3 border border-orange-100">
-                        <p class="text-[11px] font-bold text-shopee-orange mb-1">🎁 GRATIS ONGKIR</p>
-                        <p class="text-[10px] text-gray-500">Minimal belanja Rp50.000</p>
-                    </div>
+    <div class="max-w-lg mx-auto px-4 py-4">
+        <!-- Flash Sale Banner -->
+        <div class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 rounded-lg p-3 mb-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="flash-pulse text-lg">⚡</span>
+                    <span class="text-white font-bold text-sm">FLASH SALE</span>
                 </div>
-            </aside>
+                <div class="flex items-center gap-1">
+                    <span class="bg-white/20 text-white px-2 py-0.5 rounded text-xs font-bold" id="hours">02</span>
+                    <span class="text-white font-bold">:</span>
+                    <span class="bg-white/20 text-white px-2 py-0.5 rounded text-xs font-bold" id="minutes">45</span>
+                    <span class="text-white font-bold">:</span>
+                    <span class="bg-white/20 text-white px-2 py-0.5 rounded text-xs font-bold" id="seconds">30</span>
+                </div>
+            </div>
+        </div>
 
-            <!-- Product Grid -->
-            <div class="flex-1 min-w-0">
-                <div class="bg-white rounded-sm shadow-sm mb-4">
-                    <div class="flex border-b border-gray-100">
-                        <button class="px-6 py-3 text-sm font-medium transition-colors relative text-shopee-orange">
-                            Rekomendasi
-                            <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-shopee-orange"></span>
-                        </button>
-                        <button class="px-6 py-3 text-sm font-medium transition-colors relative text-gray-500 hover:text-gray-700">Terlaris</button>
-                        <button class="px-6 py-3 text-sm font-medium transition-colors relative text-gray-500 hover:text-gray-700">Terbaru</button>
+        <!-- Product Card -->
+        <a href="https://s.shopee.co.id/7KuC7FWzoH" target="_blank" rel="noopener noreferrer" class="block">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Product Image -->
+                <div class="relative aspect-square bg-gradient-to-br from-orange-50 to-red-50">
+                    <div class="w-full h-full flex items-center justify-center">
+                        <span class="text-[120px]">🧥</span>
                     </div>
+                    <span class="absolute top-3 left-3 bg-shopee-orange text-white text-xs px-2 py-1 font-bold rounded">30% OFF</span>
+                    <span class="absolute top-3 right-3 bg-red-500 text-white text-xs px-2 py-1 font-bold rounded flash-pulse">⚡ HOT</span>
                 </div>
 
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
-                    <!-- Main Product - Affiliate Link -->
-                    <a href="https://s.shopee.co.id/7KuC7FWzoH" target="_blank" rel="noopener noreferrer" class="product-card bg-white rounded-sm overflow-hidden block border border-gray-100 shadow-sm hover:shadow-lg transition-all">
-                        <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                            <div class="w-full h-full bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center text-5xl">🧥</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">30% OFF</span>
-                            <span class="absolute top-0 right-0 bg-red-500 text-white text-[10px] px-1.5 py-0.5 font-bold flash-pulse">⚡ HOT</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Jaket Hoodie Premium Unisex - Best Seller!</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp150.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp215.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★★</span>
-                                    <span class="text-gray-400 ml-0.5">4.9</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 5.2rb</span>
-                            </div>
-                        </div>
-                    </a>
+                <!-- Product Info -->
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Jaket Hoodie Premium Unisex</h2>
+                    
+                    <!-- Price -->
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-2xl font-black text-shopee-orange">Rp150.000</span>
+                        <span class="text-sm text-gray-400 line-through">Rp215.000</span>
+                        <span class="bg-shopee-orange/10 text-shopee-orange text-xs px-2 py-0.5 font-bold rounded">-30%</span>
+                    </div>
 
-                    <!-- Placeholder products -->
-                    <div class="product-card bg-white rounded-sm overflow-hidden border border-gray-100 shadow-sm">
-                        <div class="relative aspect-square bg-gray-50">
-                            <div class="w-full h-full bg-gradient-to-br from-sky-100 to-blue-100 flex items-center justify-center text-4xl">👕</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">20% OFF</span>
+                    <!-- Rating -->
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex items-center">
+                            <span class="text-orange-400">★★★★★</span>
                         </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Kaos Polos Cotton Combed 30s</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp45.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp56.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★★</span>
-                                    <span class="text-gray-400 ml-0.5">4.8</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 12rb</span>
-                            </div>
+                        <span class="text-sm text-gray-500">4.9</span>
+                        <span class="text-sm text-gray-400">•</span>
+                        <span class="text-sm text-gray-500">5.2rb terjual</span>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="text-green-500">✓</span>
+                            <span>Bahan Premium Fleece Tebal</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="text-green-500">✓</span>
+                            <span>Size S - XXL Tersedia</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="text-green-500">✓</span>
+                            <span>Gratis Ongkir Se-Indonesia</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="text-green-500">✓</span>
+                            <span>Garansi 7 Hari</span>
                         </div>
                     </div>
 
-                    <div class="product-card bg-white rounded-sm overflow-hidden border border-gray-100 shadow-sm">
-                        <div class="relative aspect-square bg-gray-50">
-                            <div class="w-full h-full bg-gradient-to-br from-emerald-100 to-green-100 flex items-center justify-center text-4xl">👖</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">28% OFF</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Celana Jogger Premium Fleece</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp95.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp132.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★☆</span>
-                                    <span class="text-gray-400 ml-0.5">4.7</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 8.5rb</span>
-                            </div>
-                        </div>
+                    <!-- CTA Button -->
+                    <div class="bg-shopee-orange hover:bg-shopee-darkOrange text-white text-center py-3 rounded-lg font-bold text-base transition-colors">
+                        🛒 Beli di Shopee
                     </div>
 
-                    <div class="product-card bg-white rounded-sm overflow-hidden border border-gray-100 shadow-sm">
-                        <div class="relative aspect-square bg-gray-50">
-                            <div class="w-full h-full bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center text-4xl">🧢</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">15% OFF</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Cap Baseball Premium Embroidery</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp35.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp41.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★★</span>
-                                    <span class="text-gray-400 ml-0.5">4.9</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 15rb</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card bg-white rounded-sm overflow-hidden border border-gray-100 shadow-sm">
-                        <div class="relative aspect-square bg-gray-50">
-                            <div class="w-full h-full bg-gradient-to-br from-amber-100 to-yellow-100 flex items-center justify-center text-4xl">👟</div>
-                            <span class="absolute top-0 left-0 bg-shopee-orange text-white text-[10px] px-1.5 py-0.5 font-bold">22% OFF</span>
-                        </div>
-                        <div class="p-2">
-                            <h3 class="text-xs text-gray-700 line-clamp-2 min-h-[32px] leading-tight">Sneakers Casual Unisex Premium</h3>
-                            <div class="mt-2">
-                                <span class="text-shopee-orange font-bold text-sm">Rp185.000</span>
-                                <span class="text-gray-400 text-[10px] line-through ml-1">Rp237.000</span>
-                            </div>
-                            <div class="mt-1.5 flex items-center justify-between text-[10px]">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="text-orange-400">★★★★☆</span>
-                                    <span class="text-gray-400 ml-0.5">4.6</span>
-                                </div>
-                                <span class="text-gray-400">Terjual 4.2rb</span>
-                            </div>
-                        </div>
+                    <!-- Trust badges -->
+                    <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gray-400">
+                        <span>✅ 100% Original</span>
+                        <span>🚚 Pengiriman Cepat</span>
+                        <span>🔄 Mudah Dikembalikan</span>
                     </div>
                 </div>
             </div>
+        </a>
+
+        <!-- Additional Info -->
+        <div class="mt-4 bg-white rounded-lg p-4 shadow-sm">
+            <h3 class="font-bold text-gray-800 mb-2">Kenapa Belanja di Jagonya Fashion?</h3>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="flex items-center gap-2 text-sm text-gray-600">
+                    <span class="text-lg">🚚</span>
+                    <span>Gratis Ongkir</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-600">
+                    <span class="text-lg">✅</span>
+                    <span>Produk Original</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-600">
+                    <span class="text-lg">💰</span>
+                    <span>Harga Terbaik</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-600">
+                    <span class="text-lg">🔄</span>
+                    <span>Garansi 7 Hari</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-4 text-center text-xs text-gray-400">
+            <p>© 2026 Jagonya Fashion. Semua hak dilindungi.</p>
+            <p class="mt-1">📱 Follow kami: @dwifaculz</p>
         </div>
     </div>
-
-    <!-- Features -->
-    <section class="bg-white border-t border-b mt-4">
-        <div class="max-w-7xl mx-auto px-4 py-8">
-            <h2 class="text-lg font-bold text-gray-800 mb-6 text-center">Kenapa Belanja di Jagonya Fashion?</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
-                    <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">🚚</div>
-                    <h3 class="font-bold text-gray-800 text-sm">Gratis Ongkir</h3>
-                    <p class="text-[11px] text-gray-500 mt-1">Promo setiap hari</p>
-                </div>
-                <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
-                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">✅</div>
-                    <h3 class="font-bold text-gray-800 text-sm">Produk Original</h3>
-                    <p class="text-[11px] text-gray-500 mt-1">100% asli</p>
-                </div>
-                <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">💰</div>
-                    <h3 class="font-bold text-gray-800 text-sm">Harga Terbaik</h3>
-                    <p class="text-[11px] text-gray-500 mt-1">Termurah dijamin</p>
-                </div>
-                <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
-                    <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">🔄</div>
-                    <h3 class="font-bold text-gray-800 text-sm">Garansi 7 Hari</h3>
-                    <p class="text-[11px] text-gray-500 mt-1">Mudah dikembalikan</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-shopee-darkOrange text-white">
-        <div class="max-w-7xl mx-auto px-4 py-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="col-span-2 md:col-span-1">
-                    <h2 class="text-white font-black text-lg mb-3">JAGONYA FASHION 👕</h2>
-                    <p class="text-xs text-orange-200">Rekomendasi Outfit & Jaket Terbaik</p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-sm mb-3">Bantuan</h4>
-                    <ul class="space-y-2 text-xs text-orange-200">
-                        <li>Hubungi Kami</li>
-                        <li>Cara Belanja</li>
-                        <li>Cara Pembayaran</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-sm mb-3">Kebijakan</h4>
-                    <ul class="space-y-2 text-xs text-orange-200">
-                        <li>Kebijakan Pengembalian</li>
-                        <li>Kebijakan Privasi</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-sm mb-3">Ikuti Kami</h4>
-                    <p class="text-xs text-orange-200 mb-2">Follow kami untuk update!</p>
-                    <p class="text-sm font-medium">📱 @dwifaculz</p>
-                </div>
-            </div>
-            <div class="border-t border-orange-600 mt-6 pt-6 text-center">
-                <p class="text-[11px] text-orange-300">© 2026 Jagonya Fashion. Semua hak dilindungi. 🔥</p>
-            </div>
-        </div>
-    </footer>
 
     <!-- Countdown Script -->
     <script>
