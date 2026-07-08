@@ -3,176 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racun Fashion - Rekomendasi Outfit & Jaket Terbaik</title>
-    <meta name="description" content="Racun Fashion - Jaket Hoodie Premium Unisex. Nyaman, stylish, harga terjangkau. Diskon 30%!">
-    <meta property="og:title" content="Racun Fashion - Rekomendasi Outfit & Jaket Terbaik">
-    <meta property="og:description" content="Racun Fashion - Jaket Hoodie Premium Unisex. Nyaman, stylish, harga terjangkau. Diskon 30%!">
-    <meta property="og:type" content="product">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Moki Shop — Layanan Penambah Followers, Likes & Views Sosmed Terpercaya</title>
+    <meta name="description" content="Moki Shop menyediakan layanan penambah followers, likes, dan views untuk TikTok, Instagram, dan Facebook dengan harga terbaik.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-        body { font-family: 'Roboto', sans-serif; }
-        .flash-pulse { animation: pulse 1.5s infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        :root{--pink:#FF6B9D;--purple:#C084FC;--green:#10B981;--bg:#FFF5F7;--card:#FFF;--text:#1E1E2E;--muted:#6B7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+        .paw-bg{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80'%3E⚡%3C/text%3E%3C/svg%3E");background-size:120px}
+        .hero{background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)),url('https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=1200&q=80') center/cover no-repeat;color:#fff;text-align:center;padding:60px 20px 70px;position:relative;overflow:hidden}
+        .hero::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:50px;background:var(--bg);border-radius:50% 50% 0 0}
+        .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(255,107,157,0.3),rgba(192,132,252,0.3));z-index:0}
+        .hero>*{position:relative;z-index:1}
+        .hero-cat{font-size:80px;margin-bottom:12px;animation:bounce 2s infinite}
+        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+        .hero h1{font-size:36px;font-weight:900;margin-bottom:10px;text-shadow:0 2px 10px rgba(0,0,0,.15)}
+        .hero p{font-size:17px;opacity:.95;max-width:420px;margin:0 auto;line-height:1.6}
+        .hero-badge{display:inline-block;background:rgba(255,255,255,.25);backdrop-filter:blur(10px);padding:8px 20px;border-radius:24px;font-size:15px;font-weight:700;margin-top:14px}
+        .flash-sale{background:linear-gradient(90deg,#FF6B9D,#FB923C);color:#fff;text-align:center;padding:14px 16px;font-weight:800;font-size:18px;position:relative;z-index:1}
+        .flash-sale .timer{display:inline-flex;gap:4px;margin-left:8px}
+        .flash-sale .timer span{background:#fff;color:#FF6B9D;padding:3px 8px;border-radius:6px;font-size:16px;min-width:32px;display:inline-block;font-weight:900}
+        .categories{display:flex;gap:10px;padding:20px 16px 10px;overflow-x:auto;scrollbar-width:none;position:relative;z-index:1}
+        .categories::-webkit-scrollbar{display:none}
+        .cat-pill{flex-shrink:0;padding:10px 20px;border-radius:24px;background:#fff;border:2px solid #FBCFE8;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap}
+        .cat-pill.active,.cat-pill:hover{background:var(--pink);color:#fff;border-color:var(--pink);transform:scale(1.05)}
+        .section-title{padding:24px 16px 12px;font-size:24px;font-weight:900;position:relative;z-index:1}
+        .section-title span{color:var(--pink)}
+        .products{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:10px 14px 24px;position:relative;z-index:1}
+        @media(min-width:600px){.products{grid-template-columns:repeat(3,1fr);gap:16px}}
+        .product-card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+        .product-card:hover{transform:translateY(-6px);box-shadow:0 12px 32px rgba(255,107,157,.18)}
+        .product-img{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:64px;position:relative;overflow:hidden;background:linear-gradient(135deg,#FDF2F8,#EDE9FE)}
+        .product-img img{width:100%;height:100%;object-fit:cover}
+        .product-img .badge{position:absolute;top:10px;left:10px;background:var(--pink);color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:10px;z-index:2}
+        .product-img .commission{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:10px;z-index:2}
+        .product-info{padding:12px 14px 16px;flex:1;display:flex;flex-direction:column}
+        .product-name{font-size:14px;font-weight:700;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:8px;min-height:40px}
+        .product-sales{font-size:13px;color:var(--muted);margin-bottom:8px;font-weight:600}
+        .product-price{font-size:20px;font-weight:900;color:var(--pink);margin-bottom:10px}
+        .product-price .old{font-size:13px;color:#9CA3AF;text-decoration:line-through;font-weight:600;margin-left:4px}
+        .btn-buy{display:block;width:100%;padding:10px;background:linear-gradient(135deg,#FF6B9D,#C084FC);color:#fff;border:none;border-radius:12px;font-size:14px;font-weight:800;cursor:pointer;text-align:center;text-decoration:none;transition:opacity .2s,transform .1s;font-family:inherit}
+        .btn-buy:hover{opacity:.9}
+        .trust{display:flex;justify-content:center;gap:28px;padding:24px 16px;text-align:center;position:relative;z-index:1}
+        .trust-item{font-size:14px;font-weight:700;color:var(--muted)}
+        .trust-item .icon{font-size:28px;margin-bottom:6px}
+        .cta-banner{margin:0 16px 20px;background:linear-gradient(135deg,#FF6B9D,#C084FC);color:#fff;border-radius:18px;padding:24px;text-align:center;position:relative;z-index:1}
+        .cta-banner h3{font-size:22px;font-weight:900;margin-bottom:8px}
+        .cta-banner p{font-size:15px;opacity:.9;margin-bottom:14px}
+        .cta-banner .btn-cta{display:inline-block;background:#fff;color:var(--pink);padding:12px 28px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none}
+        footer{text-align:center;padding:28px 16px 50px;font-size:13px;color:var(--muted);position:relative;z-index:1}
+        .floating-cat{position:fixed;bottom:24px;right:24px;font-size:48px;z-index:100;animation:float 3s ease-in-out infinite;cursor:pointer;filter:drop-shadow(0 4px 12px rgba(0,0,0,.15))}
+        @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(5deg)}}
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'shopee-orange': '#EE4D2D',
-                        'shopee-darkOrange': '#D0011B',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="min-h-screen bg-gray-100">
-    <!-- Header -->
-    <header class="bg-shopee-orange sticky top-0 z-50 shadow-md">
-        <div class="max-w-lg mx-auto px-4">
-            <div class="flex items-center justify-center h-12">
-                <h1 class="text-white font-black text-base tracking-wider">RACUN FASHION 🔥</h1>
-            </div>
-        </div>
-    </header>
+<body>
+<div class="paw-bg"></div>
+<div class="hero">
+    <div class="hero-cat">🚀</div>
+    <h1>Moki Shop</h1>
+    <p>Penyedia layanan <strong>Followers, Likes, & Views</strong> sosial media terlengkap & terpercaya. Proses cepat, aman, dan bergaransi!</p>
+    <div class="hero-badge">🔥 Diskon s/d 25% hari ini</div>
+</div>
+<div class="flash-sale">⚡ FLASH SALE — Berakhir dalam <div class="timer"><span id="hh">05</span>:<span id="mm">23</span>:<span id="ss">47</span></div></div>
+<div class="categories">
+    <div class="cat-pill active" onclick="filterProducts('all',this)">⚡ Semua</div>
+    <div class="cat-pill" onclick="filterProducts('obat',this)">💊 Obat Kutu</div>
+    <div class="cat-pill" onclick="filterProducts('vitamin',this)">💉 Vitamin</div>
+    <div class="cat-pill" onclick="filterProducts('snack',this)">🍖 Snack</div>
+    <div class="cat-pill" onclick="filterProducts('susu',this)">🥛 Susu</div>
+    <div class="cat-pill" onclick="filterProducts('bulu',this)">✨ Bulu Kulit</div>
+    <div class="cat-pill" onclick="filterProducts('bundle',this)">📦 Bundling</div>
+    <div class="cat-pill" onclick="filterProducts('aksesoris',this)">🏠 Aksesoris</div>
+</div>
+<div class="section-title">🛒 <span>Produk Kucing</span> Pilihan</div>
+<div class="products" id="productGrid"></div>
+<div class="cta-banner">
+    <h3>🚀 Butuh Booster Sosial Media?</h3>
+    <p>Dapatkan followers aktif Indonesia maupun global dengan harga agen termurah dan layanan customer service 24/7.</p>
+    <a href="https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%20layanan%20sosmed" class="btn-cta">💬 Order Via WhatsApp</a>
+</div>
+<div class="trust">
+    <div class="trust-item"><div class="icon">✅</div>100% Aman & Legal</div>
+    <div class="trust-item"><div class="icon">🚚</div>Proses Cepat/Instant</div>
+    <div class="trust-item"><div class="icon">🔄</div>Garansi Refill 30 Hari</div>
+    <div class="trust-item"><div class="icon">⭐</div>4.9 Rating</div>
+</div>
+<footer>
+    <p><strong>Moki Shop</strong> — Layanan Social Media Marketing Terbaik & Terpercaya ⚡</p>
+    <p style="margin-top:6px">Harga dan ketersediaan bisa berubah sewaktu-waktu.</p>
+</footer>
+<div class="floating-cat" onclick="window.scrollTo({top:0,behavior:'smooth'})">🚀</div>
+<script>
+function openShopee(url){
+  window.open(url,'_self');
+}
 
-    <!-- Main Content -->
-    <div class="max-w-lg mx-auto px-4 py-4">
-        <!-- Flash Sale Banner -->
-        <div class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 rounded-lg p-3 mb-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <span class="flash-pulse text-lg">⚡</span>
-                    <span class="text-white font-bold text-sm">FLASH SALE</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <span class="bg-white/20 text-white px-2 py-0.5 rounded text-xs font-bold" id="hours">02</span>
-                    <span class="text-white font-bold">:</span>
-                    <span class="bg-white/20 text-white px-2 py-0.5 rounded text-xs font-bold" id="minutes">45</span>
-                    <span class="text-white font-bold">:</span>
-                    <span class="bg-white/20 text-white px-2 py-0.5 rounded text-xs font-bold" id="seconds">30</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product Card -->
-        <a href="https://s.shopee.co.id/7KuC7FWzoH" class="block">
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <!-- Product Image -->
-                <div class="relative aspect-square bg-gradient-to-br from-orange-50 to-red-50">
-                    <div class="w-full h-full flex items-center justify-center">
-                        <span class="text-[120px]">🧥</span>
-                    </div>
-                    <span class="absolute top-3 left-3 bg-shopee-orange text-white text-xs px-2 py-1 font-bold rounded">30% OFF</span>
-                    <span class="absolute top-3 right-3 bg-red-500 text-white text-xs px-2 py-1 font-bold rounded flash-pulse">⚡ HOT</span>
-                </div>
-
-                <!-- Product Info -->
-                <div class="p-4">
-                    <h2 class="text-lg font-bold text-gray-800 mb-2">Jaket Hoodie Premium Unisex</h2>
-                    
-                    <!-- Price -->
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="text-2xl font-black text-shopee-orange">Rp150.000</span>
-                        <span class="text-sm text-gray-400 line-through">Rp215.000</span>
-                        <span class="bg-shopee-orange/10 text-shopee-orange text-xs px-2 py-0.5 font-bold rounded">-30%</span>
-                    </div>
-
-                    <!-- Rating -->
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="flex items-center">
-                            <span class="text-orange-400">★★★★★</span>
-                        </div>
-                        <span class="text-sm text-gray-500">4.9</span>
-                        <span class="text-sm text-gray-400">•</span>
-                        <span class="text-sm text-gray-500">5.2rb terjual</span>
-                    </div>
-
-                    <!-- Features -->
-                    <div class="space-y-2 mb-4">
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="text-green-500">✓</span>
-                            <span>Bahan Premium Fleece Tebal</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="text-green-500">✓</span>
-                            <span>Size S - XXL Tersedia</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="text-green-500">✓</span>
-                            <span>Gratis Ongkir Se-Indonesia</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="text-green-500">✓</span>
-                            <span>Garansi 7 Hari</span>
-                        </div>
-                    </div>
-
-                    <!-- CTA Button -->
-                    <div class="bg-shopee-orange hover:bg-shopee-darkOrange text-white text-center py-3 rounded-lg font-bold text-base transition-colors">
-                        🛒 Beli di Shopee
-                    </div>
-
-                    <!-- Trust badges -->
-                    <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gray-400">
-                        <span>✅ 100% Original</span>
-                        <span>🚚 Pengiriman Cepat</span>
-                        <span>🔄 Mudah Dikembalikan</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <!-- Additional Info -->
-        <div class="mt-4 bg-white rounded-lg p-4 shadow-sm">
-            <h3 class="font-bold text-gray-800 mb-2">Kenapa Belanja di Racun Fashion?</h3>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-lg">🚚</span>
-                    <span>Gratis Ongkir</span>
-                </div>
-                <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-lg">✅</span>
-                    <span>Produk Original</span>
-                </div>
-                <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-lg">💰</span>
-                    <span>Harga Terbaik</span>
-                </div>
-                <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-lg">🔄</span>
-                    <span>Garansi 7 Hari</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="mt-4 text-center text-xs text-gray-400">
-            <p>© 2026 Racun Fashion. Semua hak dilindungi.</p>
-            <p class="mt-1">📱 Follow kami: @dwifaculz</p>
-        </div>
-    </div>
-
-    <!-- Countdown Script -->
-    <script>
-        function updateCountdown() {
-            const now = new Date();
-            const end = new Date();
-            end.setHours(23, 59, 59, 0);
-            const diff = end - now;
-            
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
+var P=[{"n": "5.000 Followers TikTok (Global - 30 Hari Garansi Refill)", "p": "Rp85.000", "op": "Rp150.000", "s": "12RB+ terjual", "k": "43%", "b": "BEST SELLER", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%205000%20Followers%20TikTok%20Global", "c": "tiktok"}, {"n": "10.000 Followers TikTok (Global - 30 Hari Garansi Refill)", "p": "Rp160.000", "op": "Rp300.000", "s": "8RB+ terjual", "k": "47%", "b": "SUPER HEMAT", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%2010000%20Followers%20TikTok%20Global", "c": "tiktok"}, {"n": "5.000 Followers TikTok (100% Real Indonesia Aktif)", "p": "Rp550.000", "op": "Rp800.000", "s": "3RB+ terjual", "k": "31%", "b": "POPULER", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%205000%20Followers%20TikTok%20Indonesia", "c": "tiktok"}, {"n": "10.000 Followers TikTok (100% Real Indonesia Aktif)", "p": "Rp1.050.000", "op": "Rp1.500.000", "s": "1RB+ terjual", "k": "30%", "b": "REKOMENDASI LIVE", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%2010000%20Followers%20TikTok%20Indonesia", "c": "tiktok"}, {"n": "1.000 Likes TikTok (Global - Refill 30 Hari)", "p": "Rp18.000", "op": "Rp35.000", "s": "15RB+ terjual", "k": "48%", "b": "MURAH", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Likes%20TikTok%20Global", "c": "tiktok"}, {"n": "1.000 Likes TikTok (100% Real Indonesia)", "p": "Rp38.000", "op": "Rp75.000", "s": "9RB+ terjual", "k": "49%", "b": "REAL ACCOUNTS", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Likes%20TikTok%20Indonesia", "c": "tiktok"}, {"n": "10.000 Views TikTok (Global - Refill 30 Hari)", "p": "Rp12.000", "op": "Rp30.000", "s": "45RB+ terjual", "k": "60%", "b": "INSTANT", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%2010000%20Views%20TikTok%20Global", "c": "tiktok"}, {"n": "10.000 Views TikTok (100% Real Indonesia)", "p": "Rp45.000", "op": "Rp90.000", "s": "14RB+ terjual", "k": "50%", "b": "BOOSTER", "i": "https://img.icons8.com/color/180/tiktok.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%2010000%20Views%20TikTok%20Indonesia", "c": "tiktok"}, {"n": "1.000 Followers Instagram (Global - Refill 30 Hari)", "p": "Rp20.000", "op": "Rp40.000", "s": "24RB+ terjual", "k": "50%", "b": "BEST SELLER", "i": "https://img.icons8.com/color/180/instagram-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Followers%20Instagram%20Global", "c": "instagram"}, {"n": "1.000 Followers Instagram (100% Real Indonesia By Buzzer)", "p": "Rp95.000", "op": "Rp150.000", "s": "7RB+ terjual", "k": "36%", "b": "RECOMMENDED", "i": "https://img.icons8.com/color/180/instagram-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Followers%20Instagram%20Indonesia", "c": "instagram"}, {"n": "1.000 Likes Instagram (Global - High Quality)", "p": "Rp8.000", "op": "Rp20.000", "s": "30RB+ terjual", "k": "60%", "b": "INSTANT", "i": "https://img.icons8.com/color/180/instagram-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Likes%20Instagram%20Global", "c": "instagram"}, {"n": "1.000 Likes Instagram (100% Real Indonesia - Refill 30 Hari)", "p": "Rp60.000", "op": "Rp100.000", "s": "5RB+ terjual", "k": "40%", "b": "ORGANIC", "i": "https://img.icons8.com/color/180/instagram-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Likes%20Instagram%20Indonesia", "c": "instagram"}, {"n": "1.000 Followers Halaman/Profil Facebook (Global - Refill 30 Hari)", "p": "Rp25.000", "op": "Rp50.000", "s": "10RB+ terjual", "k": "50%", "b": "BEST SELLER", "i": "https://img.icons8.com/color/180/facebook-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Followers%20Facebook%20Global", "c": "facebook"}, {"n": "250 Followers Halaman/Profil Facebook (100% Real Indonesia)", "p": "Rp200.000", "op": "Rp300.000", "s": "2RB+ terjual", "k": "33%", "b": "HIGH QUALITY", "i": "https://img.icons8.com/color/180/facebook-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%20250%20Followers%20Facebook%20Indonesia", "c": "facebook"}, {"n": "1.000 Likes Postingan Facebook (Global - High Quality)", "p": "Rp15.000", "op": "Rp30.000", "s": "12RB+ terjual", "k": "50%", "b": "INSTANT", "i": "https://img.icons8.com/color/180/facebook-new.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%201000%20Likes%20Facebook%20Global", "c": "facebook"}, {"n": "Paket Starter (1k Followers + 1k Likes TikTok Global)", "p": "Rp35.000", "op": "Rp70.000", "s": "5RB+ terjual", "k": "50%", "b": "PROMO", "i": "https://img.icons8.com/color/180/combo-chart.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%20Paket%20Starter%20TikTok", "c": "bundle"}, {"n": "Paket Rintisan (5k Followers + 5k Likes TikTok Global)", "p": "Rp150.000", "op": "Rp300.000", "s": "2RB+ terjual", "k": "50%", "b": "BEST DEAL", "i": "https://img.icons8.com/color/180/combo-chart.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%20Paket%20Rintisan%20TikTok", "c": "bundle"}, {"n": "Paket FYP Indo (1k Followers + 1k Likes TikTok Indonesia)", "p": "Rp145.000", "op": "Rp250.000", "s": "3RB+ terjual", "k": "42%", "b": "RECOMMENDED", "i": "https://img.icons8.com/color/180/combo-chart.png", "l": "https://wa.me/6289685811466?text=Halo%20Moki%20Shop,%20saya%20mau%20order%20Paket%20FYP%20Indo%20TikTok", "c": "bundle"}];
+function renderProducts(f){
+f=f||'all';
+var g=document.getElementById('productGrid');
+var d=f==='all'?P:P.filter(function(x){return x.c===f});
+g.innerHTML=d.map(function(x){
+var badge=x.b?'<div class="badge">'+x.b+'</div>':'';
+return '<a href="'+x.l+'" class="product-card">'+
+'<div class="product-img">'+
+'<img src="'+x.i+'" alt="'+x.n+'" loading="lazy">'+
+badge+
+''+
+'</div>'+
+'<div class="product-info">'+
+'<div class="product-name">'+x.n+'</div>'+
+'<div class="product-sales">🛒 '+x.s+'</div>'+
+'<div class="product-price">'+x.p+(x.op?'<span class="old">'+x.op+'</span>':'')+'</div>'+
+'<div class="btn-buy">🛒 Beli Sekarang</div>'+
+'</div></a>'}).join('');
+}
+function filterProducts(c,el){
+document.querySelectorAll('.cat-pill').forEach(function(e){e.classList.remove('active')});
+el.classList.add('active');
+renderProducts(c);
+}
+function updateTimer(){
+var n=new Date(),e=new Date();
+e.setHours(23,59,59,0);
+var d=e-n;
+var h=Math.floor(d/3600000);
+var m=Math.floor((d%3600000)/60000);
+var s=Math.floor((d%60000)/1000);
+document.getElementById('hh').textContent=String(h).padStart(2,'0');
+document.getElementById('mm').textContent=String(m).padStart(2,'0');
+document.getElementById('ss').textContent=String(s).padStart(2,'0');
+}
+setInterval(updateTimer,1000);
+updateTimer();
+renderProducts();
+</script>
 </body>
 </html>
